@@ -31,6 +31,7 @@ deriving ToJson, FromJson
 /-- Process a Lean file in a fresh environment. -/
 structure File extends CommandOptions where
   path : System.FilePath
+  env: Option Nat
 deriving FromJson
 
 /--
